@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Cat's Human Age!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Discover Your Cat's Human Age!</h1>
+    </header>
+    
+    <section>
+        <!-- ADD LATER:
+        <p>Your cat's name:</p>
+        <input type="text" name="cat-name" id="cat_name"> -->
+
+        <form id = "form">
+            <label for="feline_age">Your cat's feline age:</label>
+            <select id="select_feline_age" onchange="calculate()">
+                <option value="0-1m">0-1month</option>
+                <option value="2-3m">2-3months</option>
+                <option value="4m">4 months</option>
+                <option value="6m">6 months</option>
+                <option value="7m">7 months</option>
+                <option value="12m">12 months</option>
+                <option value="18m">18 months</option>
+                <option value="2y">2 years</option>
+                <option value="3y">3 years</option>
+                <option value="4y">4 years</option>
+                <option value="5y">5 years</option>
+                <option value="6y">6 years</option>
+                <option value="7y">7 years</option>
+                <option value="8y">8 years</option>
+                <option value="9y">9 years</option>
+                <option value="10y">10 years</option>
+                <option value="11y">11 years</option>
+                <option value="12y">12 years</option>
+                <option value="13y">13 years</option>
+                <option value="14">14 years</option>
+                <option value="15">15 years</option>
+                <option value="16">16 years</option>
+                <option value="17">17 years</option>
+                <option value="18">18 years</option>
+                <option value="19">19 years</option>
+                <option value="20">20 years</option>
+                <option value="21">21 years</option>
+                <option value="22">22 years</option>
+                <option value="23">23 years</option>
+                <option value="24">24 years</option>
+                <option value="25">25 years</option>
+            </select>
+            <input type="button" onclick="calculate()" value="Calculate!"></form>
+        </form>
+
+        <div id="result"></div>
+
+    </section>
+
+    <script>
+        
+
+        function calculate() {
+            let feline_age = document.getElementById('select_feline_age')
+            let result = document.getElementById('result')
+            switch(feline_age.value) {
+                /* FIND OUT A SMARTEST WAY TO DO THE FOLLOWING:*/
+                case "0-1m":
+                    result.innerHTML = 'Your cat is 0-1 years old!'
+                    break;
+                case "2-3m":
+                    result.innerHTML = 'Your cat is 2-4 years old!'
+                    break;
+                case "4m":
+                    result.innerHTML = 'Your cat is 6-8 years old!'
+                    break;
+                case "6m":
+                    result.innerHTML = 'Your cat is 10 years old!'
+                    break;
+                case "7m":
+                    result.innerHTML = 'Your cat is 12 years old!'
+                    break;
+                case "12m":
+                    result.innerHTML = 'Your cat is 15 years old!'
+                    break;
+                case "18m":
+                    result.innerHTML = 'Your cat is 21 years old!'
+                    break;
+                case "2y":
+                    result.innerHTML = 'Your cat is 24 years old!'
+                    break;
+                case "3y":
+                    result.innerHTML = 'Your cat is 28 years old!'
+                    break;
+                case "4y":
+                    result.innerHTML = 'Your cat is 32 years old!'
+                    break;
+                case "5y":
+                    result.innerHTML = 'Your cat is 36 years old!'
+                    break;
+                case "6y":
+                    result.innerHTML = 'Your cat is 40 years old!'
+                    break;
+                case "7y":
+                    result.innerHTML = 'Your cat is 44 years old!'
+                    break;
+                case "8y":
+                    result.innerHTML = 'Your cat is 48 years old!'
+                    break;
+                case "9y":
+                    result.innerHTML = 'Your cat is 52 years old!'
+                    break;
+                case "10y":
+                    result.innerHTML = 'Your cat is 56 years old!'
+                    break;
+                case "11y":
+                    result.innerHTML = 'Your cat is 60 years old!'
+                    break;
+                case "12y":
+                    result.innerHTML = 'Your cat is 64 years old!'
+                    break;
+                case "13y":
+                    result.innerHTML = 'Your cat is 68 years old!'
+                    break;
+                case "14y":
+                    result.innerHTML = 'Your cat is 72 years old!'
+                    break;
+                case "15y":
+                    result.innerHTML = 'Your cat is 76 years old!'
+                    break;
+                case "16y":
+                    result.innerHTML = 'Your cat is 80 years old!'
+                    break;
+                case "17y":
+                    result.innerHTML = 'Your cat is 84 years old!'
+                    break;
+                case "18y":
+                    result.innerHTML = 'Your cat is 88 years old!'
+                    break;
+                case "19y":
+                    result.innerHTML = 'Your cat is 92 years old!'
+                    break;
+                case "20y":
+                    result.innerHTML = 'Your cat is 96 years old!'
+                    break;
+                case "21":
+                    result.innerHTML = 'Your cat is 100 years old!'
+                    break;
+                case "22":
+                    result.innerHTML = 'Your cat is 104 years old!'
+                    break;
+                case "23":
+                    result.innerHTML = 'Your cat is 108 years old!'
+                    break;
+                case "24":
+                    result.innerHTML = 'Your cat is 112 years old!'
+                    break;
+                case "25":
+                    result.innerHTML = 'Your cat is 116 years old!'
+                    break;
+            }
+                }
+    </script>
+
+    <footer>
+        <p>Developed by Melissa Webster <a href="https://github.com/melissawebster" target="_blank" rel="external">[GitHub]</a></p>
+        <p>Content reference: <a href="https://journals.sagepub.com/doi/pdf/10.1016/j.jfms.2009.12.006" target="_blank" rel="external">American Association of Feline Practitioners</a></p>
+    </footer>
+
+
+
+</body>
+</html>
