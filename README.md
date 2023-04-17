@@ -10,5 +10,7 @@ VSCode
 To Do:
 
 Customize CSS
+
 Insert Images
+
 Enhance JS code
