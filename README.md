@@ -4,10 +4,11 @@
 
 Languages and Tools:
 
-	•	HTML, CSS and JavaScript
-	•	VSCode
+HTML, CSS and JavaScript
+VSCode
  
-Ongoing issues:
-	•	Customize CSS
-	•	Insert Images
-	•	Enhance JS code
+To Do:
+
+Customize CSS
+Insert Images
+Enhance JS code
