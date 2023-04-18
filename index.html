@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Discover Your Cat's Human Age!</h1>
+        <h1 id="h1">Discover Your Cat's Human&nbsp;Age</h1>
     </header>
     
     <section>
@@ -18,9 +18,9 @@
         <p>Your cat's name:</p>
         <input type="text" name="cat-name" id="cat_name"> -->
 
-        <form id = "form">
+        <form id="form">
             <label for="feline_age">Your cat's feline age:</label>
-            <select id="select_feline_age" onchange="calculate()">
+            <select id="select_feline_age">
                 <option value="0-1m">0-1month</option>
                 <option value="2-3m">2-3months</option>
                 <option value="4m">4 months</option>
@@ -53,7 +53,8 @@
                 <option value="24">24 years</option>
                 <option value="25">25 years</option>
             </select>
-            <input type="button" onclick="calculate()" value="Calculate!"></form>
+            <br>
+            <input type="button" id="button" onclick="calculate()" value="Calculate human age!"></form>
         </form>
 
         <div id="result"></div>
@@ -61,7 +62,7 @@
     </section>
 
     <footer>
-        <p>Developed by Melissa Webster <a href="https://github.com/melissawebster" target="_blank" rel="external">[GitHub]</a></p>
+        <p id="footer_text">Developed by Melissa Webster <a href="https://github.com/melissawebster" target="_blank" rel="external">[GitHub]</a></p>
         <p>Content reference: <a href="https://journals.sagepub.com/doi/pdf/10.1016/j.jfms.2009.12.006" target="_blank" rel="external">American Association of Feline Practitioners</a></p>
     </footer>
 
