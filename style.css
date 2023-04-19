@@ -2,8 +2,7 @@ html {
     min-height: 100%;
 }
 
-body {
-    background-image: linear-gradient(#3f51fb,#41d6ff);
+.body {
     font-family: grenadine-mvb, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -20,11 +19,13 @@ body {
 
 header {
     padding: 5px;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    color: #7e98fe;
     text-align: center;
     background: #ffc93c;
     border-radius: 5px;
-    width: 70%;
+    width: 75%;
+    max-width: 600px;
     height: 85%;
     margin: auto;
     box-shadow: 5px 5px 10px #47362b35;
@@ -44,7 +45,8 @@ section {
     text-align: center;
     background: #ff9a3c;
     border-radius: 5px;
-    width: 70%;
+    width: 75%;
+    max-width: 600px;
     height: 175px;
     margin: auto;
     box-shadow: 5px 5px 10px #47362b35;
@@ -67,7 +69,8 @@ footer {
     font-size: 12px;
     background: #ffc93c;
     border-radius: 5px;
-    width: 70%;
+    width: 75%;
+    max-width: 600px;
     height: 100px;
     margin: auto;
     text-align: center;

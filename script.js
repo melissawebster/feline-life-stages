@@ -1,3 +1,25 @@
+
+function phase_day() {
+    let body = document.querySelector('.body')
+    let msg = document.getElementById('greetings-text')
+    let date = new Date()
+    let hour = date.getHours()
+
+    if (hour >= 0 && hour < 12) {
+        body.style.background = "linear-gradient(to bottom," + '#3f51fb' + "," + '#41d6ff' + ")"
+        msg.innerHTML = `Good morning! Now it is ${hour} o'clock and it's time to:`
+
+    } else if (hour >=12 && hour < 18) {
+        body.style.background = "linear-gradient(to bottom," + '#4f52cf' + "," + '#fdceaf' + ")"
+        msg.innerHTML = `Good afternoon! Now it is ${hour} o'clock and it's time to:`
+
+    } else {
+        body.style.background = "linear-gradient(to bottom," + '#050928' + "," + '#37277e' + ")"
+        msg.innerHTML = `Good evening! Now it is ${hour} o'clock and it's time to:`
+    }
+}
+
+
 function calculate() {
     let feline_age = document.getElementById('select_feline_age')
     let result = document.getElementById('result')
@@ -98,3 +120,4 @@ function calculate() {
             break;
     }
         }
+
