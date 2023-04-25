@@ -23,101 +23,102 @@ function phase_day() {
 function calculate() {
     let feline_age = document.getElementById('select_feline_age')
     let result = document.getElementById('result')
+    age = ''
     switch(feline_age.value) {
-        /* FIND OUT A SMARTEST WAY TO DO THE FOLLOWING:*/
         case "0-1m":
-            result.innerHTML = 'Your cat is 0-1 years old!'
+            age = '0 - 1'
             break;
         case "2-3m":
-            result.innerHTML = 'Your cat is 2-4 years old!'
+            age = '2 - 4'
             break;
         case "4m":
-            result.innerHTML = 'Your cat is 6-8 years old!'
+            age = '6 - 8'
             break;
         case "6m":
-            result.innerHTML = 'Your cat is 10 years old!'
+            age = '10'
             break;
         case "7m":
-            result.innerHTML = 'Your cat is 12 years old!'
+            age = '12'
             break;
         case "12m":
-            result.innerHTML = 'Your cat is 15 years old!'
+            age = '15'
             break;
         case "18m":
-            result.innerHTML = 'Your cat is 21 years old!'
+            age = '21'
             break;
         case "2y":
-            result.innerHTML = 'Your cat is 24 years old!'
+            age = '24'
             break;
         case "3y":
-            result.innerHTML = 'Your cat is 28 years old!'
+            age = '28'
             break;
         case "4y":
-            result.innerHTML = 'Your cat is 32 years old!'
+            age = '32'
             break;
         case "5y":
-            result.innerHTML = 'Your cat is 36 years old!'
+            age = '36'
             break;
         case "6y":
-            result.innerHTML = 'Your cat is 40 years old!'
+            age = '40'
             break;
         case "7y":
-            result.innerHTML = 'Your cat is 44 years old!'
+            age = '44'
             break;
         case "8y":
-            result.innerHTML = 'Your cat is 48 years old!'
+            age = '48'
             break;
         case "9y":
-            result.innerHTML = 'Your cat is 52 years old!'
+            age = '52'
             break;
         case "10y":
-            result.innerHTML = 'Your cat is 56 years old!'
+            age = '56'
             break;
         case "11y":
-            result.innerHTML = 'Your cat is 60 years old!'
+            age = '60'
             break;
         case "12y":
-            result.innerHTML = 'Your cat is 64 years old!'
+            age = '64'
             break;
         case "13y":
-            result.innerHTML = 'Your cat is 68 years old!'
+            age = '68'
             break;
         case "14y":
-            result.innerHTML = 'Your cat is 72 years old!'
+            age = '72'
             break;
         case "15y":
-            result.innerHTML = 'Your cat is 76 years old!'
+            age = '76'
             break;
         case "16y":
-            result.innerHTML = 'Your cat is 80 years old!'
+            age = '80'
             break;
         case "17y":
-            result.innerHTML = 'Your cat is 84 years old!'
+            age = '84'
             break;
         case "18y":
-            result.innerHTML = 'Your cat is 88 years old!'
+            age = '88'
             break;
         case "19y":
-            result.innerHTML = 'Your cat is 92 years old!'
+            age = '92'
             break;
         case "20y":
-            result.innerHTML = 'Your cat is 96 years old!'
+            age = '96'
             break;
         case "21":
-            result.innerHTML = 'Your cat is 100 years old!'
+            age = '100'
             break;
         case "22":
-            result.innerHTML = 'Your cat is 104 years old!'
+            age = '104'
             break;
         case "23":
-            result.innerHTML = 'Your cat is 108 years old!'
+            age = '108'
             break;
         case "24":
-            result.innerHTML = 'Your cat is 112 years old!'
+            age = '112'
             break;
         case "25":
-            result.innerHTML = 'Your cat is 116 years old!'
+            age = '116'
             break;
     }
+    result.innerHTML = `Your cat is ${age} years old!`
         }
 
